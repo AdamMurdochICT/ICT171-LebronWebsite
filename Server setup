@@ -1,0 +1,18 @@
+Server setup:
+On Amazon EC2 create instance:
+  Name: Lebron-Fanpage
+  AMI: Ubuntu Server
+  Create a Key Pair (.pem file) NAME: MasterKey
+  Allow SSH HTTP AND HTTPS
+  Click Launch Instance
+Connect to the server
+  Find Public Ip: 13.238.120.156
+  Chmod 400 MasterKey.pem
+  ssh -i Masterkey.pem ubuntu@13.238.120.156
+  Type Yes
+Update server and install nginx for web servers
+  sudo apt update 
+  sudo apt install nginx -y
+  sudo systemctl start nginx
+  sudo systemctl enable nginx
+  type 13.238.120.156 in a web browser and nginx should be there if not server restart
