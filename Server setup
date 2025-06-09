@@ -7,6 +7,8 @@ On Amazon EC2 create instance:
   Click Launch Instance
 Connect to the server
   Find Public Ip: 13.238.120.156
+  open gitbash on your desktop 
+  have your .pem key on your desktop too (can be anywhere but this takes out finding the path and extra writing)
   Chmod 400 MasterKey.pem
   ssh -i Masterkey.pem ubuntu@13.238.120.156
   Type Yes
@@ -17,4 +19,69 @@ Update server and install nginx for web servers
   sudo systemctl enable nginx
   type 13.238.120.156 in a web browser and nginx should be there if not server restart
 Installing php For the website
-  sudo
+  sudo apt update 
+  sudo apt install php-fpm php-mysq1
+  sudo systemctl start php8.3-fpm
+  sudo systemctl enable php8.3-fpm
+Now everything is downloaded you must make sure nginx and php can communicate 
+  sudo nano /etc/nginx/sites-available/default
+  now find the block for php and update it 
+It looks like this 
+ location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock; 
+make sure the correct version is being used same as the one download e.g. 8.3 for this example 
+your total page should look like this:
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    root /var/www/html;
+    index index.php index.html index.htm;
+
+    server_name your_domain_or_ip;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # pass PHP scripts to FastCGI server
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;  # <-- Check your PHP version, e.g. php7.4-fpm.sock or php8.1-fpm.sock
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+control x then press enter 
+TESTING -
+  ls /var/run/php
+
+Now everything should be downloaded onto your server all you have to do is upload your html/php files
+To upload html files find the path on your computer 
+example: c:\user\downloads\
+now that you have the path 
+type exit twice in your console to get back to main 
+  type(do this for every html file):
+  scp -i MasterKey.pem "C:\user\locationofHtmlfile\index.html" ubuntu@13.238.120.156:~
+  (this uploads your html files to \home\ section on your server)
+now you need to move the files to /var/www/html/
+ssh into your server ( ssh -i MasterKey.pem ubuntu@13.238.120.156)
+  sudo mv ~/index.html /var/www/html/
+Do that for every file now they all should be updated in the server 
+check IP 13.238.120.156 in web browser 
+Common errors i ran into:
+
+incorrect version in php socket
+  fixed by going into the file and editing like above
+Invalid permissions 
+  fixed by code bellow
+    sudo chmod 644 /var/www/html/index.html
+   sudo chown www-data:www-data /var/www/html/index.html
+  allows permissions for those files 
+
+
+
+  
