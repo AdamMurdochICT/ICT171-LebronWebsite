@@ -16,3 +16,5 @@ Update server and install nginx for web servers
   sudo systemctl start nginx
   sudo systemctl enable nginx
   type 13.238.120.156 in a web browser and nginx should be there if not server restart
+Installing php For the website
+  sudo
