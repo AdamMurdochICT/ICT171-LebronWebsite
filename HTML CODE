@@ -1,0 +1,623 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LeBron James - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #4b2e83;
+      color: white;
+      padding: 15px 0; /* reduced from 30px */
+      text-align: left; /* fixed invalid flex-start */
+      font-size: 2em;   /* reduced from 2.5em */
+      font-weight: bold;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+      padding-left: 20px;
+    }
+    .header-logo {
+      height: 60px;
+      width: 60px;  /* added width for consistent sizing */
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .navbar {
+      background-color: #4b2e83;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    details {
+      margin: 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background: #fafafa;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+    details img {
+      max-width: 100%; /* responsive image */
+      height: auto;
+      display: block;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #4b2e83;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #ddd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="https://i1.sndcdn.com/artworks-JHaetN7jbSBk3txE-6RuPnQ-t500x500.jpg" alt="LeBron Logo" class="header-logo">
+      <span>LeBron James Fanpage</span>
+    </div>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">🏀 Home</a>
+    <a href="discussion.php">💬 Discussion</a>
+    <a href="news.html">📰 News</a>
+    <a href="references.html">📚 References</a>
+  </div>
+
+  <div class="container">
+    <h1>About LeBron James</h1>
+    <p>
+      LeBron Raymone James Sr., born December 30, 1984, is a professional basketball player for the Los Angeles Lakers.
+      Known as "King James", he is the NBA's all-time scoring leader and a four-time NBA champion.
+    </p>
+
+    <details>
+      <summary>📖 Early Life</summary>
+      <p>
+        LeBron Raymone James was born on December 30, 1984, in Akron, Ohio. He was raised by his mother, Gloria James, who had him when she was just 16 years old. Life was tough growing up — they moved around a lot and often struggled financially.
+
+Despite the hardships, LeBron found support from people in his community. One of the most important figures was Frank Walker, a local youth football coach who took LeBron in when his mother decided he needed a more stable home. Frank also introduced him to basketball when LeBron was just 9 years old.
+
+From there, LeBron’s talent grew fast. He played AAU basketball with close friends who would later become known as the "Fab Four", and together they all went to St. Vincent–St. Mary High School. LeBron quickly became a basketball sensation in high school — his games were even nationally televised, which was rare at the time.
+
+By the time he graduated, he was already being called "The Chosen One" and was on the cover of Sports Illustrated. He skipped college and went straight to the NBA draft in 2003, where he was picked #1 overall by the Cleveland Cavaliers — beginning one of the most legendary basketball careers of all time.
+      </p>
+      <img src="https://www.si.com/.image/t_share/MTY4MTI4MDkzODc0MzAwMTc3/lebron-james-childhoodjpg.jpg" width="200" height="200" alt="LeBron childhood">
+    </details>
+
+    <details>
+      <summary>🏀 NBA Career</summary>
+      <p>
+        LeBron James's NBA career is a testament to sustained excellence, adaptability, and a relentless pursuit of greatness. Over more than two decades, he has not only achieved remarkable individual success but has also significantly impacted every team he has been part of.
+
+Cleveland Cavaliers (2003–2010; 2014–2018): LeBron was drafted first overall by the Cavaliers in 2003. In his initial stint, he rapidly became the team's cornerstone, leading them to their first NBA Finals appearance in 2007. After a four-year tenure with the Miami Heat, he returned to Cleveland in 2014. In 2016, he led the Cavaliers to their first-ever NBA championship, overcoming a 3–1 deficit against the Golden State Warriors in the Finals. 
+en.wikipedia.org
+
+Miami Heat (2010–2014): LeBron's move to Miami marked a new chapter, where he joined forces with Dwyane Wade and Chris Bosh. During his four seasons with the Heat, he reached the NBA Finals each year, securing back-to-back championships in 2012 and 2013. His performance during this period solidified his reputation as one of the game's elite players.
+
+Los Angeles Lakers (2018–present): In 2018, LeBron signed with the Lakers, aiming to restore the franchise's glory. His leadership culminated in the 2020 NBA championship, where he was named Finals MVP, making him the first player to earn this honor with three different teams.
+
+Throughout his career, LeBron has amassed numerous accolades, including four NBA championships, four MVP awards, and 20 All-Star selections. In 2023, he became the NBA's all-time leading scorer, surpassing Kareem Abdul-Jabbar. His longevity and consistent performance have set new standards in professional basketball.
+en.wikipedia.org
+
+In 2024, LeBron and his son Bronny made history by becoming the first father-son duo to play together in an NBA game. The following year, he was inducted into the Naismith Memorial Basketball Hall of Fame as a member of the 2008 U.S. Olympic "Redeem Team." 
+en.wikipedia.org
+
+LeBron James's career is not just defined by statistics and championships but also by his influence on the game and his ability to inspire both teammates and fans alike.
+
+
+
+
+
+
+
+
+
+Sources
+
+
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg/960px-LeBron_James_%2851959977144%29_%28cropped2%29.jpg" width="200" height="200" alt="LeBron">
+      <p>
+        LeBron has made 10 NBA Finals appearances, winning 4 titles, and was a key player in each team's success.
+      </p>
+    </details>
+
+    <details>
+      <summary>🌟 Achievements</summary>
+      <ul>
+        <li>🏆 4× NBA Champion</li>
+        <li>🏀 NBA All-Time Scoring Leader</li>
+        <li>🌟 19× NBA All-Star</li>
+        <li>🎬 Founder of SpringHill Entertainment</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>🎖️ Off the Court</summary>
+      <p>
+        LeBron is known for his philanthropy, notably founding the "I PROMISE School" in Akron to help underprivileged students.
+        He is also active in media, producing films and documentaries through his company, SpringHill Entertainment.
+      </p>
+    </details>
+  </div>
+
+  <footer>
+    <div style="max-width: 1000px; margin: auto;">
+      <p>&copy; 2025 <strong>LeBron Fan Club</strong> — Created by Adam Wallwork</p>
+      <p>
+        Content licensed under 
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">
+          CC BY-NC 4.0
+        </a> — You may share and adapt, but not for commercial use.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LeBron James News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4b2e83;
+      color: white;
+      padding: 15px 0;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+      padding-left: 20px;
+    }
+    .header-logo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    header span {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .navbar {
+      background-color: #4b2e83;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1, h2 {
+      color: #4b2e83;
+    }
+    ul.news-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.news-list li {
+      margin-bottom: 15px;
+    }
+    ul.news-list li a {
+      color: #4b2e83;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    ul.news-list li a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #4b2e83;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="https://i1.sndcdn.com/artworks-JHaetN7jbSBk3txE-6RuPnQ-t500x500.jpg" alt="LeBron Logo" class="header-logo">
+      <span>LeBron James Fanpage</span>
+    </div>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">🏀 Home</a>
+    <a href="discussion.php">💬 Discussion</a>
+    <a href="news.html">📰 News</a>
+    <a href="references.html">📚 References</a>
+  </div>
+
+  <div class="container">
+    <h1>LeBron James News</h1>
+
+    <h2>Updates From The King</h2>
+    <a><blockquote class="twitter-tweet"><p lang="en" dir="ltr">U bum <a href="https://twitter.com/StephenCurry30?ref_src=twsrc%5Etfw">@StephenCurry30</a> already said he ain&#39;t going! So therefore ain&#39;t no invite. Going to White House was a great honor until you showed up!</p>&mdash; LeBron James (@KingJames) <a href="https://twitter.com/KingJames/status/911610455877021697?ref_src=twsrc%5Etfw">September 23, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></a>
+
+    <h2>News Articles</h2>
+    <ul class="news-list">
+      <li><a><iframe src="https://sports.yahoo.com/article/dominique-wilkins-whose-team-lakers-041945459.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAMOR_qugZne5BwQvGr8p31vTg2lm_L0GlN_X13f9qjy59IWhSrkcyg_TST5oDRQyjlepq9NrCU4hCWLRBEe_EOW-ncHfwnsz58dJ1iwRFa0_qrdKoPQ7W3F6mA_BqAd2VqfoYHGKWPDJPle7UyQDfml8zPIlomOHZSzvr2KDoG3I" width="600" height="400"></iframe></a></li>
+      <li><a><iframe src="https://sports.yahoo.com/nba/article/nba-playoffs-lebron-james-not-ready-to-make-decision-about-his-future-retirement-after-loss-to-timberwolves-055511336.html" width="600" height="400"></iframe></a></li>
+    </ul>
+
+    <h2>Featured Video</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hpfRr_D8e4Y?si=bg7fK3XSzNcI3H17"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    
+
+    <h2>Lebrons Career Profile</h2>
+    <div style="border: 1px solid #ccc; padding: 15px; text-align: center; border-radius: 10px;">
+      <p><strong>View LeBron James' Full NBA Profile</strong></p>
+      <a href="https://www.nba.com/player/2544/lebron-james" target="_blank" rel="noopener noreferrer" 
+         style="background-color: #4b2e83; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+        Visit NBA.com
+      </a>
+    </div>
+  </div>
+
+  <footer style="background-color: #4b2e83; color: white; padding: 20px 10px; text-align: center; font-size: 0.9em;">
+    <div style="max-width: 1000px; margin: auto;">
+      <p style="margin: 5px 0;">&copy; 2025 <strong>LeBron Fan Club</strong> — Created by Adam Wallwork</p>
+      <p style="margin: 5px 0;">
+        Content licensed under 
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           style="color: #ddd; text-decoration: underline;">
+           CC BY-NC 4.0
+        </a> — You may share and adapt, but not for commercial use.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
+<?php 
+$name = htmlspecialchars(trim($_POST['name']));
+$message = htmlspecialchars(trim($_POST['message']));
+$time = date("Y-m-d H:i:s");
+
+if ($name && $message) {
+    $entry = "$time|$name|$message\n";
+    file_put_contents("comments.txt", $entry, FILE_APPEND);
+}
+header("Location: discussion.php"); 
+exit();
+?>
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeBron James Fan Page References</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4b2e83;
+      color: white;
+      padding: 15px 0;
+      text-align: left;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+      padding-left: 20px;
+    }
+
+    .header-logo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .navbar {
+      background-color: #4b2e83;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #4b2e83;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #4b2e83;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="https://i1.sndcdn.com/artworks-JHaetN7jbSBk3txE-6RuPnQ-t500x500.jpg" alt="LeBron Logo" class="header-logo">
+      <span>LeBron James Fanpage</span>
+    </div>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">🏀 Home</a>
+    <a href="discussion.php">💬 Discussion</a>
+    <a href="news.html">📰 News</a>
+    <a href="references.html">📚 References</a>
+  </div>
+
+  <div class="container">
+    <h2>References & Attribution</h2>
+    <ul>
+      <li><a href="https://twitter.com/KingJames" target="_blank">LeBron James on Twitter/X</a> – Embedded tweet used for latest social content.</li>
+      <li><a href="https://www.nba.com/player/2544/lebron-james" target="_blank">NBA.com - LeBron James Profile</a> – Used for bio and stats.</li>
+      <li><a href="https://www.espn.com/nba/player/_/id/1966/lebron-james" target="_blank">ESPN LeBron Profile</a> – Source for news and updates.</li>
+      <li><a href="https://www.si.com/nba/player/lebron-james" target="_blank">Sports Illustrated - LeBron James</a> – Source for sports news.</li>
+      <li><a href="https://www.youtube.com/" target="_blank">YouTube</a> – Video highlights and interviews embedded.</li>
+      <li><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons BY-NC 4.0 License</a> – License applied to this fan project.</li>
+      <li>All media used under fair use or public embed rights where applicable. This is a not-for-profit fan project for educational purposes.</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 LeBron Fan Club. Created by Adam Wallwork.<br>
+    Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> — You may share and adapt, but not for commercial use.
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeBron James - Discussion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #4b2e83;
+      color: white;
+      padding: 15px 0;
+      text-align: left;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+      padding-left: 20px;
+    }
+    .header-logo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .navbar {
+      background-color: #4b2e83;
+      padding: 10px;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #4b2e83;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .comment {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      position: relative;
+    }
+    .comment small {
+      color: #666;
+    }
+    .delete-btn {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      color: red;
+      text-decoration: none;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="https://i1.sndcdn.com/artworks-JHaetN7jbSBk3txE-6RuPnQ-t500x500.jpg" alt="LeBron Logo" class="header-logo" />
+      <span>LeBron James Fanpage</span>
+    </div>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">🏀 Home</a>
+    <a href="discussion.php">💬 Discussion</a>
+    <a href="news.html">📰 News</a>
+    <a href="references.html">📚 References</a>
+  </div>
+
+  <div class="container">
+    <h2>💬 Fan Discussion</h2>
+    <form action="post_comments.php" method="POST">
+      <input type="text" name="name" placeholder="Your name..." required />
+      <textarea name="message" placeholder="Your comment..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+
+    <div class="comments">
+      <h3>Previous Comments</h3>
+      <?php include 'load_comments.php'; ?>
+    </div>
+  </div>
+</body>
+</html>
+<?php 
+$index = (int)$_POST['index'];
+$lines = file("comments.txt", FILE_IGNORE_NEW_LINES);
+if (isset($lines[$index])) {
+    unset($lines[$index]);
+    file_put_contents("comments.txt", implode("\n", $lines));
+}
+header("Location: discussion.php"); // Changed from discussion.html
+exit();
+?>
+<?php 
+$filename = "comments.txt";
+
+if (file_exists($filename)) {
+    $lines = array_reverse(file($filename, FILE_IGNORE_NEW_LINES));
+    foreach ($lines as $index => $line) {
+        $parts = explode('|', $line);
+
+        // Skip lines that are not properly formatted
+        if (count($parts) !== 3) {
+            continue;
+        }
+
+        list($time, $name, $message) = $parts;
+
+        echo "<div class='comment'>";
+        echo "<strong>" . htmlspecialchars($name) . "</strong> <small>($time)</small>";
+        echo "<form method='POST' action='delete_comment.php' style='display:inline; float:right;' onsubmit='return confirm(\"Delete this comment?\");'>";
+        echo "<input type='hidden' name='index' value='" . (count($lines) - 1 - $index) . "' />";
+        echo "<button class='delete-btn'>🗑️ Delete</button>";
+        echo "</form>";
+        echo "<p>" . htmlspecialchars($message) . "</p>";
+        echo "</div>";
+    }
+} else {
+    echo "<p>No comments yet.</p>";
+}
+?>
+
+
+
+
