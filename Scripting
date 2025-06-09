@@ -1,0 +1,49 @@
+ssh into the server (ssh -i MasterKey.pem ubuntu@13.238.120.156)
+create the file im going to do a backup website script
+backupscript automates backing up files on the server and stores them in a designated back up foler 
+nano ~/backup_website.sh
+copy simple backup script bellow 
+  BACKUP_DIR="/home/ubuntu/backups"
+  WEB_ROOT="/var/www/html"
+  mkdir -p "$BACKUP_DIR"
+  TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+  BACKUP_FILE="$BACKUP_DIR/website_backup_$TIMESTAMP.tar.gz"
+  tar -czf "$BACKUP_FILE" -C "$WEB_ROOT" .
+  echo "Backup completed: $BACKUP_FILE"
+control x then press ENTER to save
+Now give permissions to the script 
+  chmod +x ~/backup_website.sh
+  ./backup_website.sh
+
+Making a monitoring script to check if services ar running 
+
+This script is designed to check if basic services of the site are running e.g. php and nginx 
+if they are it prints services are running if not it prints services are not running and attempts a restart on the services 
+this is particularly useful for diagnosing server issues 
+  nano ~/monitor_services.sh
+SCRIPT:
+services=("nginx" "php8.3-fpm")
+
+for service in "${services[@]}"
+do
+    if systemctl is-active --quiet "$service"
+    then
+        echo "$service is running."
+    else
+        echo "$service is NOT running. Attempting to restart..."
+        sudo systemctl restart "$service"
+        if systemctl is-active --quiet "$service"
+        then
+            echo "$service restarted successfully."
+        else
+            echo "Failed to restart $service. Please check manually."
+        fi
+    fi
+done
+
+PERMISSIONS
+chmod +x ~/monitor_services.sh
+Deploy Script
+./monitor_services.sh
+
+  
